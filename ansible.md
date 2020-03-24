@@ -15,10 +15,11 @@ ansible <groupe> -a "systemctl status sshd"
 * Lancement d'un playbook
 
 ```sh
-git pull https://github.com/bbuzens/poc_devops.git
+cd poc-ansible
+git fetch --all
 ansible-playbook ansible/playbook/apache_deploy.yml
 ```
 
-> Initialiser le premier "pull" avec un `git clone`
+> Initialiser le premier "fetch" avec un `git clone`
 
 > A l'occasion, regarder le fonctionnement de la commande `ansible-pull`
