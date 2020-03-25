@@ -30,6 +30,13 @@ git add forgotten_file
 git commit --amend
 ```
 
+* Supprimer les modifications pour pull la dernière version du repo
+```sh
+git fetch --all
+git reset --hard origin/master
+git pull origin master
+```
+
 ## Configurer le user
 
 ```sh
