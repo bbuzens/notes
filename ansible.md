@@ -16,7 +16,7 @@ ansible <groupe> -a "systemctl status sshd"
 
 ```sh
 cd poc-ansible
-git fetch --all
+git pull
 ansible-playbook ansible/playbook/apache_deploy.yml
 ```
 
