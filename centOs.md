@@ -28,3 +28,18 @@ NM_CONTROLLED=no
 
 ifup enp0s8
 ```
+
+ou
+
+```sh
+cat << EOF > /etc/sysconfig/network-scripts/ifcfg-enp0s8
+TYPE=Ethernet
+DEVICE=enp0s8
+IPADDR=<192.168.100.101>
+NETMASK=255.255.255.0
+ONBOOT=yes
+NOZEROCONF=yes
+USERCTL=no
+NM_CONTROLLED=no
+EOF
+```
