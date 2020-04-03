@@ -1,3 +1,67 @@
+# Version Redhat/CentOS
+
+``` bash
+cat /etc/redhat-release
+```
+
+# Contrôle des processus
+
+``` bash
+ps -eaf
+```
+
+# Contrôle des file system
+
+``` bash
+df -k
+du -h --max-depth=2
+```
+
+# Traces système
+
+``` bash
+strace <commande>
+```
+# Contrôle des ports en écoute
+
+``` bash
+netstat -tulpn | grep LISTEN
+```
+
+# Contrôle d'ouverture de port
+
+## Avec telnet
+
+``` bash
+telnet <host> <port>
+```
+
+## Avec netcat
+
+``` bash
+nc <ip> <port>
+```
+
+## Test DNS
+
+``` bash
+nslookup <ip|host>
+host <ip|host>
+dig <host>
+dig +noall +answer <host>
+dig -x <ip>
+dig +noall +answer -x <ip>
+```
+
+## Capture de trame avec tcpdump
+
+``` bash
+tcpdump -n -i en0 -w cdr.pcap
+```
+
+> Lecture possible du fichier avec Wireshark (filtre http)
+
+
 # Installation CentOS
 
 * Penser à configurer le démarrage au boot et à démarrer l'interface réseau enp0s3 après installation du système
